@@ -20,7 +20,7 @@ export default async function PassagePage(props: PageProps<"/passage/[id]">) {
           className="inline-flex items-center text-slate-500 hover:text-blue-600 transition-colors font-medium"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
-          Back to Passages
+          Back
         </Link>
       </div>
       

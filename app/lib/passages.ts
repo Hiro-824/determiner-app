@@ -40,44 +40,6 @@ export const passages: Passage[] = [
         }
     },
     {
-        id: "machine-translation",
-        title: "将来、完璧な機械翻訳機が出現したときでも、人間は外国語の勉強を続けるだろうか",
-        difficulty: "Advanced",
-        text: "Even if perfect machine translation becomes available in {1} future, I think people will continue studying {2} foreign languages. First, language learning is not only {3} tool for communication but also a way to understand other cultures and ways of thinking. By learning another language, we can better understand {4} people who speak it. Second, using a foreign language by ourselves can help us build trust and closer relationships. People are often happier when someone makes {5} effort to speak their language. For these reasons, I believe foreign language study will still be meaningful.",
-        blanks: {
-            "1": {
-                id: "1",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["the"],
-                explanation: "'in the future'（将来）は常に「the」を必要とする英語の定型表現です。"
-            },
-            "2": {
-                id: "2",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["∅ (no article)"],
-                explanation: "一般的な複数形の名詞（'foreign languages'）について広く話す場合、冠詞はつきません。"
-            },
-            "3": {
-                id: "3",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["a"],
-                explanation: "'Tool'（ツール・道具）は単数形の可算名詞です。言語学習が多くのツールのうちの一つであることを示すため、「a」を使います。"
-            },
-            "4": {
-                id: "4",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["the"],
-                explanation: "通常 'people' には冠詞がつきませんが、ここでは 'who speak it'（それを話す）が続いています。この関係詞節によって「どの人々」かが明確に特定されるため、「the」を使う必要があります。"
-            },
-            "5": {
-                id: "5",
-                options: ["a", "an", "the", "∅ (no article)"],
-                correctAnswers: ["an"],
-                explanation: "'Effort'（努力）は単数形の可算名詞です。母音（エの音）で始まるため、「a」ではなく「an」を使います。"
-            }
-        }
-    },
-    {
         id: "visiting-canada",
         title: "A country or region I would like to visit in the future",
         difficulty: "Intermediate",
@@ -250,7 +212,45 @@ export const passages: Passage[] = [
                 explanation: "「寝る」という意味の「go to bed」は定型表現です。bedが本来の目的（睡眠）で使われる場合は冠詞をつけません。"
             }
         }
-    }
+    },
+    {
+        id: "machine-translation",
+        title: "将来、完璧な機械翻訳機が出現したときでも、人間は外国語の勉強を続けるだろうか",
+        difficulty: "Advanced",
+        text: "Even if perfect machine translation becomes available in {1} future, I think people will continue studying {2} foreign languages. First, language learning is not only {3} tool for communication but also a way to understand other cultures and ways of thinking. By learning another language, we can better understand {4} people who speak it. Second, using a foreign language by ourselves can help us build trust and closer relationships. People are often happier when someone makes {5} effort to speak their language. For these reasons, I believe foreign language study will still be meaningful.",
+        blanks: {
+            "1": {
+                id: "1",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["the"],
+                explanation: "'in the future'（将来）は常に「the」を必要とする英語の定型表現です。"
+            },
+            "2": {
+                id: "2",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["∅ (no article)"],
+                explanation: "一般的な複数形の名詞（'foreign languages'）について広く話す場合、冠詞はつきません。"
+            },
+            "3": {
+                id: "3",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["a"],
+                explanation: "'Tool'（ツール・道具）は単数形の可算名詞です。言語学習が多くのツールのうちの一つであることを示すため、「a」を使います。"
+            },
+            "4": {
+                id: "4",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["the"],
+                explanation: "通常 'people' には冠詞がつきませんが、ここでは 'who speak it'（それを話す）が続いています。この関係詞節によって「どの人々」かが明確に特定されるため、「the」を使う必要があります。"
+            },
+            "5": {
+                id: "5",
+                options: ["a", "an", "the", "∅ (no article)"],
+                correctAnswers: ["an"],
+                explanation: "'Effort'（努力）は単数形の可算名詞です。母音（エの音）で始まるため、「a」ではなく「an」を使います。"
+            }
+        }
+    },
 ];
 
 export function getPassageById(id: string): Passage | undefined {
