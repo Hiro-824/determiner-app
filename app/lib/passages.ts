@@ -11,31 +11,31 @@ export const passages: Passage[] = [
                 id: "1",
                 options: ["a", "the", "some", "∅ (no article)"],
                 correctAnswers: ["∅ (no article)"],
-                explanation: "Plural countable nouns ('advantages') used in a general sense take no article."
+                explanation: "一般的な意味で使われる複数形の可算名詞（'advantages'）には冠詞がつきません。"
             },
             "2": {
                 id: "2",
                 options: ["a", "the", "some", "∅ (no article)"],
                 correctAnswers: ["∅ (no article)"],
-                explanation: "The word 'people' is plural. Because we are talking about people in general—not a specific group of people—we use no article."
+                explanation: "'people' は複数形です。特定のグループではなく、一般的な人々について話しているため、冠詞は使いません。"
             },
             "3": {
                 id: "3",
                 options: ["a", "an", "the", "∅ (no article)"],
                 correctAnswers: ["a"],
-                explanation: "'Environment' is a singular countable noun. We are talking about one type of environment out of many, and it is being introduced for the first time, so we use 'a'."
+                explanation: "'Environment'（環境）は単数形の可算名詞です。数ある環境のうちの一つの種類について話しており、初めて言及されるため「a」を使います。"
             },
             "4": {
                 id: "4",
                 options: ["a", "the", "any", "∅ (no article)"],
                 correctAnswers: ["∅ (no article)"],
-                explanation: "General plural nouns take no article. We are talking about coworkers in general, not specific individuals."
+                explanation: "一般的な複数形の名詞には冠詞がつきません。特定の個人ではなく、一般的な同僚について話しています。"
             },
             "5": {
                 id: "5",
                 options: ["a", "the", "some", "∅ (no article)"],
                 correctAnswers: ["∅ (no article)"],
-                explanation: "When we talk about 'work' as a general daily activity or concept, it is an uncountable noun and takes no article."
+                explanation: "日常の活動や概念としての一般的な「仕事（work）」について話す場合、不可算名詞となるため冠詞はつきません。"
             }
         }
     },
@@ -49,31 +49,31 @@ export const passages: Passage[] = [
                 id: "1",
                 options: ["a", "the", "some", "∅ (no article)"],
                 correctAnswers: ["the"],
-                explanation: "'In the future' is a fixed English expression that always requires 'the'."
+                explanation: "'in the future'（将来）は常に「the」を必要とする英語の定型表現です。"
             },
             "2": {
                 id: "2",
                 options: ["a", "the", "some", "∅ (no article)"],
                 correctAnswers: ["∅ (no article)"],
-                explanation: "General plural nouns ('foreign languages') take no article when we are speaking broadly about all of them."
+                explanation: "一般的な複数形の名詞（'foreign languages'）について広く話す場合、冠詞はつきません。"
             },
             "3": {
                 id: "3",
                 options: ["a", "the", "some", "∅ (no article)"],
                 correctAnswers: ["a"],
-                explanation: "'Tool' is a singular, countable noun. We use 'a' to show that language learning is just one of many possible tools."
+                explanation: "'Tool'（ツール・道具）は単数形の可算名詞です。言語学習が多くのツールのうちの一つであることを示すため、「a」を使います。"
             },
             "4": {
                 id: "4",
                 options: ["a", "the", "some", "∅ (no article)"],
                 correctAnswers: ["the"],
-                explanation: "Normally 'people' takes no article, but here we add 'who speak it'. This relative clause tells us exactly WHICH people we mean. Because they are specific, we must use 'the'."
+                explanation: "通常 'people' には冠詞がつきませんが、ここでは 'who speak it'（それを話す）が続いています。この関係詞節によって「どの人々」かが明確に特定されるため、「the」を使う必要があります。"
             },
             "5": {
                 id: "5",
                 options: ["a", "an", "the", "∅ (no article)"],
                 correctAnswers: ["an"],
-                explanation: "'Effort' is a singular countable noun. Because it starts with a vowel sound (the 'e' sound), we use 'an' instead of 'a'."
+                explanation: "'Effort'（努力）は単数形の可算名詞です。母音（エの音）で始まるため、「a」ではなく「an」を使います。"
             }
         }
     },
@@ -87,31 +87,31 @@ export const passages: Passage[] = [
                 id: "1",
                 options: ["a", "the", "some", "∅ (no article)"],
                 correctAnswers: ["∅ (no article)"],
-                explanation: "Names of individual countries (like Canada, Japan, Spain) almost never take an article."
+                explanation: "個別の国名（カナダ、日本、スペインなど）には原則として冠詞はつきません。"
             },
             "2": {
                 id: "2",
                 options: ["a", "an", "the", "∅ (no article)"],
                 correctAnswers: ["a"],
-                explanation: "'Country' is a singular countable noun. We are categorizing Canada as one of many multicultural countries in the world, so we use 'a'."
+                explanation: "'Country' は単数形の可算名詞です。カナダを世界にある多くの多文化国家の一つとして分類しているため、「a」を使います。"
             },
             "3": {
                 id: "3",
                 options: ["a", "the", "any", "∅ (no article)"],
                 correctAnswers: ["∅ (no article)"],
-                explanation: "'Cultures' is plural. Because the writer wants to experience cultures in general, not specific ones already mentioned, we use no article."
+                explanation: "'Cultures' は複数形です。筆者は既に言及された特定の文化ではなく、一般的な文化を経験したいと考えているため、冠詞は使いません。"
             },
             "4": {
                 id: "4",
                 options: ["a", "the", "some", "∅ (no article)"],
                 correctAnswers: ["∅ (no article)"],
-                explanation: "The names of languages (English, Japanese, French) never take an article."
+                explanation: "言語名（英語、日本語、フランス語など）には冠詞はつきません。"
             },
             "5": {
                 id: "5",
                 options: ["a", "the", "some", "∅ (no article)"],
                 correctAnswers: ["the"],
-                explanation: "We are not talking about just any country; we are talking about the *specific* country the author wants to visit. The phrase 'I most want to visit' makes it specific, requiring 'the'."
+                explanation: "単なる「ある国」について話しているのではなく、筆者が訪れたい「特定の」国について話しています。'I most want to visit'（最も訪れたい）というフレーズによって特定されるため、「the」が必要です。"
             }
         }
     },
