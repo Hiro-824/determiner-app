@@ -31,7 +31,7 @@ export default function Blank({ data, onSolve, isOpen, onToggle, onClose }: Blan
       {/* The Blank Button */}
       <button
         onClick={onToggle}
-        className={`px-3 py-1 min-w-[3rem] text-center font-medium rounded-md border-b-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 ${
+        className={`relative z-10 px-3 py-1 min-w-[3rem] text-center font-medium rounded-md border-b-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 ${
           !isAnswered
             ? "bg-gray-100 border-gray-400 text-gray-400 hover:bg-gray-200"
             : isCorrect
@@ -57,7 +57,7 @@ export default function Blank({ data, onSolve, isOpen, onToggle, onClose }: Blan
       {isAnswered && data.explanation && (
         <button
           onClick={() => setShowExplanation(!showExplanation)}
-          className="absolute -bottom-4 left-1/2 -translate-x-1/2 text-blue-500 hover:text-blue-700"
+          className="absolute -bottom-4 left-1/2 z-20 -translate-x-1/2 text-blue-500 hover:text-blue-700"
         >
           <Info className="w-4 h-4" />
         </button>
