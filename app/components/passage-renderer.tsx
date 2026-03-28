@@ -7,6 +7,7 @@ import Blank from "./blank";
 export default function PassageRenderer({ passage }: { passage: Passage }) {
   // Simple scoring state for future gamification
   const [score, setScore] = useState(0);
+  const [openBlankId, setOpenBlankId] = useState<string | null>(null);
   const totalBlanks = Object.keys(passage.blanks).length;
 
   // Split the text by our markers, e.g., "{1}"
@@ -40,7 +41,20 @@ export default function PassageRenderer({ passage }: { passage: Passage }) {
               const blankData = passage.blanks[blankId];
               
               if (blankData) {
-                return <Blank key={index} data={blankData} onSolve={handleSolve} />;
+                return (
+                  <Blank
+                    key={index}
+                    data={blankData}
+                    isOpen={openBlankId === blankId}
+                    onToggle={() =>
+                      setOpenBlankId((currentId) =>
+                        currentId === blankId ? null : blankId
+                      )
+                    }
+                    onClose={() => setOpenBlankId(null)}
+                    onSolve={handleSolve}
+                  />
+                );
               }
             }
             return <span key={index}>{part}</span>;

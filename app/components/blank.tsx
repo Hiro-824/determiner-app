@@ -7,11 +7,13 @@ import { BlankData, DeterminerOption } from "../types";
 interface BlankProps {
   data: BlankData;
   onSolve: (isCorrect: boolean) => void;
+  isOpen: boolean;
+  onToggle: () => void;
+  onClose: () => void;
 }
 
-export default function Blank({ data, onSolve }: BlankProps) {
+export default function Blank({ data, onSolve, isOpen, onToggle, onClose }: BlankProps) {
   const [selected, setSelected] = useState<DeterminerOption | null>(null);
-  const [isOpen, setIsOpen] = useState(false);
   const [showExplanation, setShowExplanation] = useState(false);
 
   const isAnswered = selected !== null;
@@ -19,7 +21,7 @@ export default function Blank({ data, onSolve }: BlankProps) {
 
   const handleSelect = (option: DeterminerOption) => {
     setSelected(option);
-    setIsOpen(false);
+    onClose();
     setShowExplanation(false);
     onSolve(data.correctAnswers.includes(option));
   };
@@ -28,7 +30,7 @@ export default function Blank({ data, onSolve }: BlankProps) {
     <span className="relative inline-block mx-1">
       {/* The Blank Button */}
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={onToggle}
         className={`px-3 py-1 min-w-[3rem] text-center font-medium rounded-md border-b-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 ${
           !isAnswered
             ? "bg-gray-100 border-gray-400 text-gray-400 hover:bg-gray-200"
