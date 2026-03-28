@@ -116,6 +116,142 @@ export const passages: Passage[] = [
         }
     },
     {
+        id: "the-airport-disaster",
+        title: "The Airport Disaster",
+        difficulty: "Intermediate",
+        text: "Last summer, I had a terrible experience when I traveled to Europe. I called {1} taxi to take me to {2} airport. {3} driver was very friendly, but we got stuck in {4} terrible traffic on the highway. Because of this, I arrived late. When I finally reached the check-in desk, the staff member told me I had made {5} huge mistake. I had brought {6} wrong passport! I needed to look for {7} information on my phone to see if I could change my flight, but I couldn't connect to {8} internet. Finally, I had to buy {9} new ticket. It cost a lot of {10} money, but I learned a valuable lesson.",
+        blanks: {
+            "1": {
+                id: "1",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["a"],
+                explanation: "'Taxi' is a singular, countable noun introduced for the first time. You must use 'a'. You cannot leave a singular countable noun bare in English."
+            },
+            "2": {
+                id: "2",
+                options: ["a", "an", "the", "∅ (no article)"],
+                correctAnswers: ["the"],
+                explanation: "We almost always say 'the airport' because we are referring to the specific public facility that serves that city, which both the speaker and listener know about."
+            },
+            "3": {
+                id: "3",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["the"],
+                explanation: "This is the 'second mention' rule. Because we already introduced the taxi, the listener now knows exactly WHICH driver we are talking about (the driver of that specific taxi). Therefore, it becomes 'The'."
+            },
+            "4": {
+                id: "4",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["∅ (no article)"],
+                explanation: "This is a common trap! 'Traffic' is an uncountable noun in English. Even with the adjective 'terrible' in front of it, we cannot say 'a terrible traffic'."
+            },
+            "5": {
+                id: "5",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["a"],
+                explanation: "Unlike 'traffic', 'mistake' IS a countable noun. Because it is singular and introduced for the first time, it requires 'a'."
+            },
+            "6": {
+                id: "6",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["the"],
+                explanation: "Adjectives like 'wrong', 'right', and 'same' usually take 'the' because there is only one specific state of being the wrong one."
+            },
+            "7": {
+                id: "7",
+                options: ["a", "an", "the", "∅ (no article)"],
+                correctAnswers: ["∅ (no article)"],
+                explanation: "Another major trap! 'Information' is strictly uncountable in English. You can never say 'an information'."
+            },
+            "8": {
+                id: "8",
+                options: ["a", "an", "the", "∅ (no article)"],
+                correctAnswers: ["the"],
+                explanation: "'The internet' is a unique global system. Because there is only one, we use 'the'."
+            },
+            "9": {
+                id: "9",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["a"],
+                explanation: "'Ticket' is a singular countable noun, and we don't know which specific ticket it is yet, so we use 'a'."
+            },
+            "10": {
+                id: "10",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["∅ (no article)"],
+                explanation: "Even though we can count coins and bills, the word 'money' itself is uncountable in English. Therefore, 'a lot of money' takes no article."
+            }
+        }
+    },
+    {
+        id: "smartphones-and-sleep",
+        title: "Smartphones and Sleep",
+        difficulty: "Advanced",
+        text: "Nowadays, {1} smartphones have become {2} essential part of our daily lives. People all over {3} world use them for communication, work, and entertainment. However, looking at screens at night can cause problems with {4} sleep. {5} light from these devices tricks {6} brain into thinking it is still daytime. Because of this, many doctors give us {7} important advice. They say we should avoid looking at our phones for at least an hour before going to {8} bed. Instead, it is better to read {9} book or listen to {10} relaxing music.",
+        blanks: {
+            "1": {
+                id: "1",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["∅ (no article)"],
+                explanation: "We are talking about smartphones in general, not a specific group of smartphones. General plural nouns take no article."
+            },
+            "2": {
+                id: "2",
+                options: ["a", "an", "the", "∅ (no article)"],
+                correctAnswers: ["an"],
+                explanation: "'Part' is a singular countable noun. Because the adjective 'essential' starts with a vowel sound, we use 'an'."
+            },
+            "3": {
+                id: "3",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["the"],
+                explanation: "'The world' is a unique entity. Things that are one-of-a-kind (the sun, the moon, the sky) take 'the'."
+            },
+            "4": {
+                id: "4",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["∅ (no article)"],
+                explanation: "'Sleep' as a general concept is an uncountable noun."
+            },
+            "5": {
+                id: "5",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["the"],
+                explanation: "Normally, 'light' can be uncountable (taking no article). However, the phrase 'from these devices' tells us EXACTLY which light we mean. Because it is specified, it requires 'The'."
+            },
+            "6": {
+                id: "6",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["the"],
+                explanation: "When referring to human anatomy shared by everyone (like 'the brain' or 'the heart') in a medical or scientific context, we use 'the'."
+            },
+            "7": {
+                id: "7",
+                options: ["an", "the", "some", "∅ (no article)"],
+                correctAnswers: ["∅ (no article)"],
+                explanation: "This is one of the most common mistakes for English learners! 'Advice' is always uncountable. You cannot say 'an advice' or 'an important advice'."
+            },
+            "8": {
+                id: "8",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["∅ (no article)"],
+                explanation: "'Go to bed' is a fixed phrase. We use no article because we are talking about the *activity* of sleeping, not the physical piece of furniture (which would be 'go to the bed')."
+            },
+            "9": {
+                id: "9",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["a"],
+                explanation: "'Book' is a singular countable noun. Since it refers to any general book, not a specific one, we use 'a'."
+            },
+            "10": {
+                id: "10",
+                options: ["a", "the", "some", "∅ (no article)"],
+                correctAnswers: ["∅ (no article)"],
+                explanation: "'Music' is uncountable. Even when modified by an adjective like 'relaxing', we never say 'a relaxing music'."
+            }
+        }
+    },
+    {
         id: "trip-to-store",
         title: "A Trip to the Store",
         difficulty: "Beginner",
