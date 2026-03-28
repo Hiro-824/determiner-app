@@ -116,196 +116,138 @@ export const passages: Passage[] = [
         }
     },
     {
-        id: "the-airport-disaster",
-        title: "The Airport Disaster",
+        id: "trip-to-kyoto",
+        title: "A Family Trip to Kyoto",
         difficulty: "Intermediate",
-        text: "Last summer, I had a terrible experience when I traveled to Europe. I called {1} taxi to take me to {2} airport. {3} driver was very friendly, but we got stuck in {4} terrible traffic on the highway. Because of this, I arrived late. When I finally reached the check-in desk, the staff member told me I had made {5} huge mistake. I had brought {6} wrong passport! I needed to look for {7} information on my phone to see if I could change my flight, but I couldn't connect to {8} internet. Finally, I had to buy {9} new ticket. It cost a lot of {10} money, but I learned a valuable lesson.",
+        text: "Last weekend, my family and I went on a trip to Kyoto. Before leaving, we all made sure to pack {1} bags carefully. However, my little brother completely forgot to bring {2} toothbrush. We had to buy a new one at {3} convenience store near our hotel. The hotel was very beautiful, but we were surprised by the size of {4} room; it was quite small. The next day, we visited several temples and bought {5} souvenirs for our friends. While we were looking at {6} map, {7} old man approached us and offered to help. He gave us {8} wonderful advice about where to eat. We followed {9} recommendation and found a fantastic local restaurant. Even though my brother lost {10} wallet on the train later that afternoon, it was still an unforgettable vacation.",
         blanks: {
             "1": {
                 id: "1",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["a"],
-                explanation: "'Taxi' is a singular, countable noun introduced for the first time. You must use 'a'. You cannot leave a singular countable noun bare in English."
+                options: ["the", "our", "their", "∅ (no article)"],
+                correctAnswers: ["our"],
+                explanation: "英語では、自分たちのカバンなどの「個人的な持ち物」について話すとき、日本語のように省略せず、「our（私たちの）」などの所有格を必ずつけます。"
             },
             "2": {
                 id: "2",
-                options: ["a", "an", "the", "∅ (no article)"],
-                correctAnswers: ["the"],
-                explanation: "We almost always say 'the airport' because we are referring to the specific public facility that serves that city, which both the speaker and listener know about."
+                options: ["a", "the", "his", "∅ (no article)"],
+                correctAnswers: ["his"],
+                explanation: "歯ブラシや服などの私物には「his（彼の）」「my（私の）」などの所有格を使います。日本語の感覚で冠詞を省いたり「the」を使ったりすると不自然になります。"
             },
             "3": {
                 id: "3",
                 options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["the"],
-                explanation: "This is the 'second mention' rule. Because we already introduced the taxi, the listener now knows exactly WHICH driver we are talking about (the driver of that specific taxi). Therefore, it becomes 'The'."
+                correctAnswers: ["a"],
+                explanation: "文中で初めて登場するコンビニであり、「数あるコンビニの中のどれか一つ」なので「a」を使います。"
             },
             "4": {
                 id: "4",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["∅ (no article)"],
-                explanation: "This is a common trap! 'Traffic' is an uncountable noun in English. Even with the adjective 'terrible' in front of it, we cannot say 'a terrible traffic'."
+                options: ["a", "the", "our", "∅ (no article)"],
+                correctAnswers: ["the"],
+                explanation: "前の文で「私たちが泊まったホテル（our hotel）」の話をしているため、「そのホテルの部屋」と特定できます。特定できる名詞には「the」を使います。"
             },
             "5": {
                 id: "5",
                 options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["a"],
-                explanation: "Unlike 'traffic', 'mistake' IS a countable noun. Because it is singular and introduced for the first time, it requires 'a'."
+                correctAnswers: ["∅ (no article)"],
+                explanation: "「お土産（souvenirs）」という複数形の名詞を「不特定のもの」として一般的な意味で使っているため、冠詞は不要（∅）です。"
             },
             "6": {
                 id: "6",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["the"],
-                explanation: "Adjectives like 'wrong', 'right', and 'same' usually take 'the' because there is only one specific state of being the wrong one."
+                options: ["a", "the", "our", "∅ (no article)"],
+                correctAnswers: ["a"],
+                explanation: "「地図（map）」は数えられる名詞です。ここでは特定の地図ではなく「（何か）地図を見ていた」という初出の情報なので「a」を使います。"
             },
             "7": {
                 id: "7",
-                options: ["a", "an", "the", "∅ (no article)"],
-                correctAnswers: ["∅ (no article)"],
-                explanation: "Another major trap! 'Information' is strictly uncountable in English. You can never say 'an information'."
-            },
-            "8": {
-                id: "8",
-                options: ["a", "an", "the", "∅ (no article)"],
-                correctAnswers: ["the"],
-                explanation: "'The internet' is a unique global system. Because there is only one, we use 'the'."
-            },
-            "9": {
-                id: "9",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["a"],
-                explanation: "'Ticket' is a singular countable noun, and we don't know which specific ticket it is yet, so we use 'a'."
-            },
-            "10": {
-                id: "10",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["∅ (no article)"],
-                explanation: "Even though we can count coins and bills, the word 'money' itself is uncountable in English. Therefore, 'a lot of money' takes no article."
-            }
-        }
-    },
-    {
-        id: "smartphones-and-sleep",
-        title: "Smartphones and Sleep",
-        difficulty: "Advanced",
-        text: "Nowadays, {1} smartphones have become {2} essential part of our daily lives. People all over {3} world use them for communication, work, and entertainment. However, looking at screens at night can cause problems with {4} sleep. {5} light from these devices tricks {6} brain into thinking it is still daytime. Because of this, many doctors give us {7} important advice. They say we should avoid looking at our phones for at least an hour before going to {8} bed. Instead, it is better to read {9} book or listen to {10} relaxing music.",
-        blanks: {
-            "1": {
-                id: "1",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["∅ (no article)"],
-                explanation: "We are talking about smartphones in general, not a specific group of smartphones. General plural nouns take no article."
-            },
-            "2": {
-                id: "2",
                 options: ["a", "an", "the", "∅ (no article)"],
                 correctAnswers: ["an"],
-                explanation: "'Part' is a singular countable noun. Because the adjective 'essential' starts with a vowel sound, we use 'an'."
-            },
-            "3": {
-                id: "3",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["the"],
-                explanation: "'The world' is a unique entity. Things that are one-of-a-kind (the sun, the moon, the sky) take 'the'."
-            },
-            "4": {
-                id: "4",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["∅ (no article)"],
-                explanation: "'Sleep' as a general concept is an uncountable noun."
-            },
-            "5": {
-                id: "5",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["the"],
-                explanation: "Normally, 'light' can be uncountable (taking no article). However, the phrase 'from these devices' tells us EXACTLY which light we mean. Because it is specified, it requires 'The'."
-            },
-            "6": {
-                id: "6",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["the"],
-                explanation: "When referring to human anatomy shared by everyone (like 'the brain' or 'the heart') in a medical or scientific context, we use 'the'."
-            },
-            "7": {
-                id: "7",
-                options: ["an", "the", "some", "∅ (no article)"],
-                correctAnswers: ["∅ (no article)"],
-                explanation: "This is one of the most common mistakes for English learners! 'Advice' is always uncountable. You cannot say 'an advice' or 'an important advice'."
+                explanation: "初めて登場する単数形の名詞で、母音（o）の音で始まるため「a」ではなく「an」を使います。"
             },
             "8": {
                 id: "8",
-                options: ["a", "the", "some", "∅ (no article)"],
+                options: ["a", "an", "the", "∅ (no article)"],
                 correctAnswers: ["∅ (no article)"],
-                explanation: "'Go to bed' is a fixed phrase. We use no article because we are talking about the *activity* of sleeping, not the physical piece of furniture (which would be 'go to the bed')."
+                explanation: "要注意ポイントです。「アドバイス（advice）」は英語では数えられない名詞（不可算名詞）です。そのため、「a」や「an」をつけることは絶対にありません。"
             },
             "9": {
                 id: "9",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["a"],
-                explanation: "'Book' is a singular countable noun. Since it refers to any general book, not a specific one, we use 'a'."
+                options: ["a", "the", "his", "∅ (no article)"],
+                correctAnswers: ["his"],
+                explanation: "直前に登場したおじいさんがしてくれたお勧めなので、「his（彼の）」を使います。「the」でも通じますが、誰の勧めかを明確にするため所有格が最も自然です。"
             },
             "10": {
                 id: "10",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["∅ (no article)"],
-                explanation: "'Music' is uncountable. Even when modified by an adjective like 'relaxing', we never say 'a relaxing music'."
+                options: ["a", "the", "his", "∅ (no article)"],
+                correctAnswers: ["his"],
+                explanation: "財布などの個人的な持ち物を失くしたと言う場合、英語では必ず所有格（この場合は弟の財布なので his）を使います。「lost the wallet」とはあまり言いません。"
             }
         }
     },
     {
-        id: "trip-to-store",
-        title: "A Trip to the Store",
-        difficulty: "Beginner",
-        text: "Yesterday, I went to {1} store to buy {2} apples. While walking, I saw {3} dog. {4} dog was chasing its tail.",
+        id: "first-day-at-work",
+        title: "First Day at a New Job",
+        difficulty: "Advanced",
+        text: "Starting a new job can make anyone nervous. On my first day at the tech company, I woke up early and washed {1} face. I wanted to learn all of {2} names so I could introduce myself properly to my new colleagues. When I arrived, the receptionist gave me {3} ID card and showed me to my desk. It was covered in dust, so I had to clean it before I could start {4} work. Later, I had a meeting with my team. I noticed that everyone had brought {5} laptops to the conference room. We discussed {6} important project that will launch next month. During the meeting, I asked a question about the schedule, but I couldn't fully understand {7} answer because the manager used a lot of technical terms. I realized I needed to gather more {8} information. After work, I was exhausted. I went straight home, took off {9} shoes, and went to {10} bed without eating dinner.",
         blanks: {
             "1": {
                 id: "1",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["the", "a"],
-                explanation: "Both 'a' and 'the' can be correct. Usually, we say 'the store' if it's a specific local store the speaker always goes to, or 'a store' if it's just any random store."
+                options: ["a", "the", "my", "∅ (no article)"],
+                correctAnswers: ["my"],
+                explanation: "顔や手などの体の一部を洗ったり触ったりする動作では、英語では必ず「my」「your」などの所有格を使います。「washed the face」とは言いません。"
             },
             "2": {
                 id: "2",
-                options: ["a", "the", "some", "∅ (no article)"],
-                correctAnswers: ["some", "∅ (no article)"],
-                explanation: "'Apples' is plural, so we cannot use 'a'. We use 'some' or no article to talk about an unspecified amount."
+                options: ["the", "my", "their", "∅ (no article)"],
+                correctAnswers: ["their"],
+                explanation: "新しい同僚たち（複数）のそれぞれの名前なので、「their（彼らの）」を使います。"
             },
             "3": {
                 id: "3",
                 options: ["a", "an", "the", "∅ (no article)"],
-                correctAnswers: ["a"],
-                explanation: "We use 'a' because the dog is singular and being introduced for the first time."
+                correctAnswers: ["an"],
+                explanation: "「ID card」は母音（アイ）の音で始まる数えられる名詞なので、「an」を使います。"
             },
             "4": {
                 id: "4",
-                options: ["a", "the", "some", "any"],
-                correctAnswers: ["the"],
-                explanation: "Because the dog was already introduced in the previous sentence, it is now specific. Therefore, we use 'The'."
-            }
-        }
-    },
-    {
-        id: "water-facts",
-        title: "Facts about Water",
-        difficulty: "Intermediate",
-        text: "{1} water is essential for human life. However, {2} water in my bottle is not clean. I need to find {3} fresh water before we continue hiking.",
-        blanks: {
-            "1": {
-                id: "1",
-                options: ["a", "the", "some", "∅ (no article)"],
+                options: ["a", "the", "my", "∅ (no article)"],
                 correctAnswers: ["∅ (no article)"],
-                explanation: "When talking about an uncountable noun (water) in a general sense, we use no article."
+                explanation: "この場合の「仕事（work）」は数えられない名詞（不可算名詞）です。「start work（仕事を始める）」「go to work（仕事に行く）」は定型表現として冠詞をつけません。"
             },
-            "2": {
-                id: "2",
-                options: ["a", "the", "some", "∅ (no article)"],
+            "5": {
+                id: "5",
+                options: ["the", "our", "their", "∅ (no article)"],
+                correctAnswers: ["their"],
+                explanation: "会議に参加した「みんな（everyone）」がそれぞれ自分のノートパソコンを持ってきたため、「their（彼らの）」を使います。日本語では所有格を省略しがちですが、英語では必要です。"
+            },
+            "6": {
+                id: "6",
+                options: ["a", "an", "the", "∅ (no article)"],
+                correctAnswers: ["an"],
+                explanation: "初めて言及する特定のプロジェクトではないため「an」を使います（important が母音で始まるため）。"
+            },
+            "7": {
+                id: "7",
+                options: ["a", "an", "the", "∅ (no article)"],
                 correctAnswers: ["the"],
-                explanation: "We use 'the' because we are talking about a specific body of water (the water inside a specific bottle)."
+                explanation: "直前で「質問（a question）」をしたと述べており、「その特定の質問に対する答え」と明確に特定できるため「the」を使います。"
             },
-            "3": {
-                id: "3",
-                options: ["a", "the", "some", "any"],
-                correctAnswers: ["some"],
-                explanation: "'Some' is used here to indicate an unspecified amount of an uncountable noun in an affirmative sentence."
+            "8": {
+                id: "8",
+                options: ["a", "an", "the", "∅ (no article)"],
+                correctAnswers: ["∅ (no article)"],
+                explanation: "「情報（information）」は英語では常に数えられない名詞（不可算名詞）です。「a」がついたり複数形の「s」がついたりすることは絶対にありません。"
+            },
+            "9": {
+                id: "9",
+                options: ["the", "my", "their", "∅ (no article)"],
+                correctAnswers: ["my"],
+                explanation: "靴や服などを脱ぎ着する際、英語では誰の身に着けているものかを明示するため「my（私の）」などの所有格をつけます。"
+            },
+            "10": {
+                id: "10",
+                options: ["a", "the", "my", "∅ (no article)"],
+                correctAnswers: ["∅ (no article)"],
+                explanation: "「寝る」という意味の「go to bed」は定型表現です。bedが本来の目的（睡眠）で使われる場合は冠詞をつけません。"
             }
         }
     }

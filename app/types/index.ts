@@ -1,5 +1,7 @@
-export type DeterminerOption = "a" | "an" | "the" | "some" | "any" | "∅ (no article)";
-
+export type DeterminerOption = 
+  | "a" | "an" | "the" | "some" | "any" | "∅ (no article)"
+  | "my" | "our" | "your" | "his" | "her" | "their" | "its";
+  
 export interface BlankData {
   id: string;
   options: DeterminerOption[];
